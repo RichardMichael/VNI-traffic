@@ -2,11 +2,11 @@
 VNI traffic Meterering
 
 # Description
-This is to parse the Geneve VNID header and show Packets/Bytes from NXOS version 10.2.5
+This is to parse the Geneve VNID header and show Packets/Bytes from NXOS version 10.2.5 + FX2 PID's only
 
 # Usage
 <ul>
-  1. copy the file to the bootflash of NXOS
+  1. copy the file to the bootflash of NXOS 
 </ul>
 <ul>
   2. Use <b>python3 bootflash:Rich.py</b>
