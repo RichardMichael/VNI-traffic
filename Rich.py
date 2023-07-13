@@ -7,7 +7,8 @@ import re
 from tabulate import tabulate 
 
 interface = input("Enter the interface number(Eg:Ethernet1/1):"  )
-index = json.loads(clid('sh system internal access-list interface ' + interface + ' input entries detail'))
+#index = json.loads(clid('sh system internal access-list interface ' + interface + ' input entries detail'))
+index=json.loads(cli('slot 1 quoted "sh system internal access-list interface eth 1/17 input entries detail | json"'))
 iter_in = index['TABLE_module']['ROW_module']['TABLE_instance']['ROW_instance']
 
 
